@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #6a0dad;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #6a0dad;
+      margin-bottom: 10px;
+    }
+
+    /* Blog posts */
+    .blog-post {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .blog-post:hover {
+      transform: scale(1.02);
+    }
+
+    /* Photo gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact form */
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #6a0dad;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #4b0082;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #6a0dad;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✈️ My Travel Blog</h1>
+    <nav>
+      <a href="#posts">Blog</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Blog Section -->
+  <section id="posts">
+    <h2>Travel Stories</h2>
+    <div class="blog-post">
+      <h3>Exploring Paris</h3>
+      <p>Walking through the streets of Paris was like stepping into a dream. The Eiffel Tower lit up at night is unforgettable!</p>
+    </div>
+    <div class="blog-post">
+      <h3>Adventures in Japan</h3>
+      <p>From the bustling streets of Tokyo to the peaceful temples of Kyoto, Japan is a perfect blend of tradition and modernity.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="C:\Users\nevin\Downloads\codmetric\Task-4\image 1.jpg" alt="Travel Photo 1">
+      <img src="C:\Users\nevin\Downloads\codmetric\Task-4\image 2.jpg" alt="Travel Photo 2">
+      <img src="C:\Users\nevin\Downloads\codmetric\Task-4\image 3.jpg" alt="Travel Photo 3">
+      <img src="C:\Users\nevin\Downloads\codmetric\Task-4\image 4.jpg" alt="Travel Photo 4">
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My Travel Blog | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
